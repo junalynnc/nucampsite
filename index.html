@@ -26,10 +26,17 @@
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid" />
                 </div>
+
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+
+                <!-- TASK 3: RESERVE BUTTON -->
+                <div class="col col-md-4 col-xl-2 mt-4">
+                    <a class="btn btn-info btn-lg text-nowrap" href="#reserveForm">Reserve Campsite</a> <!-- href only works for IDs -->
+                </div>
+
             </div>
         </div>
     </header>
@@ -77,9 +84,15 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
-                    shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">      
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
+                            shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake Campground" />
+                </div>
+                
             </div>
         </div>
 
@@ -98,12 +111,67 @@
                 </div>
             </div>
         </div>
+
+        <!-- TASK 2 NEW ROW -->
+        <div class="row row-content align-items-center">
+            <div class="col col-sm-6 mx-auto"> <!--leaving out col for xs viewports is ok-->
+
+                <!-- CARD COMPONENT -->
+                <div class="card">
+                    <div class="card-header bg-info text-white"> <!-- bg-info = background of teal color -->
+                        <h3>Reserve a Campsite</h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <form id="reserveForm">
+
+                            <!-- SELECT -->
+                            <div class="row form-group">
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label> <!-- col-form-label aligns text to row -->
+
+                                <div class="col">
+                                    <select id="numCampers" name="numCampers" class="form-control"> <!-- form-contorl class styles input box to be rounded corners-->
+                                        <option value="">Select...</option> <!-- options should always have a value -->
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- DATE -->
+                            <div class="row form-group"> <!-- form-group adds padding above and below rows -->
+                                <label for="date" class="col-sm-6 col-form-label">Date</label> <!-- label with control, for attribute always REQUIRED-->
+                                <div class="col">
+                                    <input type="date" id="date" name="date" placeholder="date" class="form-control"/> <!-- inputs are always SELF CLOSING -->
+                                </div>
+                            </div>
+          
+                            <!-- BUTTON -->
+                            <div class="row">
+                                <div class="col offset-5"> <!-- offset-5 will center search-->
+                                    <button type="submit" class="btn btn-primary">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
+                <div class="col-5 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
