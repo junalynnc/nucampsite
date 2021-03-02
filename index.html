@@ -34,7 +34,8 @@
 
                 <!-- TASK 3: RESERVE BUTTON -->
                 <div class="col col-md-4 col-xl-2 mt-4">
-                    <a class="btn btn-info btn-lg text-nowrap" href="#reserveForm">Reserve Campsite</a> <!-- href only works for IDs -->
+                    <a class="btn btn-info btn-lg text-nowrap" href="#reserveForm">Reserve Campsite</a>
+                    <!-- href only works for IDs -->
                 </div>
 
             </div>
@@ -85,14 +86,15 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <div class="media-body align-self-center">      
+                    <div class="media-body align-self-center">
                         <h3>React Lake Campground</h3>
-                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
+                            on the
                             shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
                     <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake Campground" />
                 </div>
-                
+
             </div>
         </div>
 
@@ -114,11 +116,13 @@
 
         <!-- TASK 2 NEW ROW -->
         <div class="row row-content align-items-center">
-            <div class="col col-sm-6 mx-auto"> <!--leaving out col for xs viewports is ok-->
+            <div class="col col-sm-6 mx-auto">
+                <!--leaving out col for xs viewports is ok-->
 
                 <!-- CARD COMPONENT -->
                 <div class="card">
-                    <div class="card-header bg-info text-white"> <!-- bg-info = background of teal color -->
+                    <div class="card-header bg-info text-white">
+                        <!-- bg-info = background of teal color -->
                         <h3>Reserve a Campsite</h3>
                     </div>
 
@@ -128,10 +132,12 @@
 
                             <!-- SELECT -->
                             <div class="row form-group">
-                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label> <!-- col-form-label aligns text to row -->
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                <!-- col-form-label aligns text to row -->
 
                                 <div class="col">
-                                    <select id="numCampers" name="numCampers" class="form-control"> <!-- form-contorl class styles input box to be rounded corners-->
+                                    <select id="numCampers" name="numCampers" class="form-control">
+                                        <!-- form-contorl class styles input box to be rounded corners-->
                                         <option value="">Select...</option> <!-- options should always have a value -->
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -144,16 +150,20 @@
                             </div>
 
                             <!-- DATE -->
-                            <div class="row form-group"> <!-- form-group adds padding above and below rows -->
-                                <label for="date" class="col-sm-6 col-form-label">Date</label> <!-- label with control, for attribute always REQUIRED-->
+                            <div class="row form-group">
+                                <!-- form-group adds padding above and below rows -->
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <!-- label with control, for attribute always REQUIRED-->
                                 <div class="col">
-                                    <input type="date" id="date" name="date" placeholder="date" class="form-control"/> <!-- inputs are always SELF CLOSING -->
+                                    <input type="date" id="date" name="date" placeholder="date" class="form-control" />
+                                    <!-- inputs are always SELF CLOSING -->
                                 </div>
                             </div>
-          
+
                             <!-- BUTTON -->
                             <div class="row">
-                                <div class="col offset-5"> <!-- offset-5 will center search-->
+                                <div class="col offset-5">
+                                    <!-- offset-5 will center search-->
                                     <button type="submit" class="btn btn-primary">
                                         Search
                                     </button>
