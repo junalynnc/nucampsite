@@ -34,10 +34,9 @@
 
                 <!-- TASK 3: RESERVE BUTTON -->
                 <div class="col col-md-4 col-xl-2 mt-4">
-                    <a class="btn btn-info btn-lg text-nowrap" href="#reserveForm">Reserve Campsite</a>
+                    <a class="btn btn-info btn-lg text-nowrap" href="#reserveForm" role="button" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
                     <!-- href only works for IDs -->
                 </div>
-
             </div>
         </div>
     </header>
@@ -216,6 +215,12 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <!-- jQuery method that activates all tooltips for our website -->
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
