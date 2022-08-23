@@ -19,9 +19,10 @@ NuCamp is a mock campsite website created as a class project in a Fullstack Web 
 - Wait for Pull Request to merge
 
 # Technologies Used
-- React
-- React-Redux
-- Backend
+- HTML
+- CSS
+- SCSS
+- JavaSript
 
 # Contributors 
 
